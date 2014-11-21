@@ -15,7 +15,7 @@ def pridej_zradlo(had, jidlo, velikost_pole = 10):
             return
             
 def vykresli(had, jidlo, velikost_pole=10):
-    print (10*"-")
+    print(10*"-")
     pole = [["."]*velikost_pole for i in range(velikost_pole)]
     for x, y in had[:-1]:
         pole[y][x] = "X"
@@ -27,7 +27,7 @@ def vykresli(had, jidlo, velikost_pole=10):
         pole[y][x] = "?" 
 
     for radek in pole:
-        print " ".join(radek)
+        print(" ".join(radek))
         
     
 def pohyb(smer,had, jidlo, velikost_pole=10):
